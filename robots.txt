@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vampyrlabs.com/sitemap.xml
