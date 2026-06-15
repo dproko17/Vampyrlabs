@@ -1,125 +1,158 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vampyr Labs | AI Health Intelligence & Wellness Coaching</title>
-  <meta name="description" content="Vampyr Labs builds focused AI-powered health products: Health Compass for health intelligence and Health Coach for daily accountability and wellness action." />
-  <meta property="og:title" content="Vampyr Labs | AI Health Intelligence & Wellness Coaching" />
-  <meta property="og:description" content="Understand your health with Health Compass. Transform your habits with Health Coach." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Vampyr Labs | AI Health Intelligence & Coaching</title>
+  <meta name="description" content="Vampyr Labs builds AI-powered health products. Health Compass helps users understand their health, while Health Coach turns insights into daily action." />
+  <meta name="keywords" content="Vampyr Labs, Health Compass, Health Coach, AI health intelligence, AI health coach, wellness AI, habit tracking, health optimization" />
+
+  <meta property="og:title" content="Vampyr Labs | AI Health Intelligence & Coaching" />
+  <meta property="og:description" content="Understand your health. Transform your future with AI-powered health intelligence and coaching." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://vampyrlabs.com" />
-  <meta name="theme-color" content="#050506" />
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div class="noise"></div>
-  <canvas id="particles" aria-hidden="true"></canvas>
+  <meta property="og:image" content="https://vampyrlabs.com/person-scan.png" />
 
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Vampyr Labs",
+    "url": "https://vampyrlabs.com",
+    "email": "hello@vampyrlabs.com",
+    "description": "Vampyr Labs builds AI-powered health intelligence and coaching products."
+  }
+  </script>
+</head>
+
+<body>
   <header class="site-header">
-    <a class="logo" href="#top" aria-label="Vampyr Labs home">
-      <span class="logo-mark">V</span>
+    <a class="brand" href="#top" aria-label="Vampyr Labs home">
+      <span class="brand-mark">V</span>
       <span>Vampyr Labs</span>
     </a>
+
     <nav class="nav">
-      <a href="#products">Products</a>
-      <a href="#system">How it works</a>
+      <a href="#health-compass">Health Compass</a>
+      <a href="#health-coach">Health Coach</a>
       <a href="#mission">Mission</a>
       <a href="#contact">Contact</a>
     </nav>
+
+    <a class="header-cta" href="mailto:hello@vampyrlabs.com?subject=Vampyr%20Labs%20Inquiry">Get Early Access</a>
   </header>
 
   <main id="top">
-    <section class="hero scan-hero section-pad">
+    <section class="hero scan-hero">
       <div class="hero-copy reveal">
-        <p class="eyebrow">AI health intelligence • coaching • accountability</p>
-        <h1>Understand your health.<br>Transform your future.</h1>
-        <p class="hero-subtitle">Vampyr Labs is building two focused AI health products: Health Compass helps you understand what matters, and Health Coach helps you turn insight into consistent daily action.</p>
+        <p class="eyebrow">AI HEALTH INTELLIGENCE • COACHING • ACCOUNTABILITY</p>
+
+        <h1>
+          Understand your health.<br />
+          Transform your future.
+        </h1>
+
+        <p class="hero-subtitle">
+          Vampyr Labs is building two focused AI health products:
+          <strong>Health Compass</strong> helps you understand what matters,
+          and <strong>Health Coach</strong> helps you turn insight into consistent daily action.
+        </p>
+
         <div class="hero-actions">
           <a class="btn primary" href="#health-compass">Explore Health Compass</a>
-          <a class="btn secondary" href="#health-coach">Meet Health Coach</a>
+          <a class="btn ghost" href="#health-coach">Meet Health Coach</a>
         </div>
       </div>
 
-      <div class="scan-visual reveal delay-1" aria-label="AI health scan visualization">
-        <img src="person-scan.png" alt="Futuristic AI health scan visualization" />
-        <div class="scan-overlay"></div>
-        <div class="scan-line"></div>
-        <div class="scan-pulse pulse-one"></div>
-        <div class="scan-pulse pulse-two"></div>
-        <div class="scan-card card-1"><strong>Health Compass</strong><span>Analyzing health signals</span></div>
-        <div class="scan-card card-2"><strong>Biometric Map</strong><span>Inputs organized</span></div>
-        <div class="scan-card card-3"><strong>Health Coach</strong><span>Action plan generated</span></div>
+      <div class="scan-stage reveal" aria-label="AI health scan visualization">
+        <div class="scan-image-wrap">
+          <img class="scan-image" src="person-scan.png" alt="AI-generated person being scanned by a health intelligence system" />
+          <div class="scan-line"></div>
+          <div class="scan-glow"></div>
+        </div>
+
+        <div class="scan-cards">
+          <article class="scan-card">
+            <h3>Health Compass</h3>
+            <p>Turn symptoms, labs, habits, and health data into personalized health intelligence.</p>
+          </article>
+
+          <article class="scan-card">
+            <h3>Health Coach</h3>
+            <p>Transform recommendations into daily habits through AI-powered coaching and accountability.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="products" class="section-pad products focused-products">
+    <section class="section products" id="products">
       <div class="section-heading reveal">
-        <p class="eyebrow">Two products. One mission.</p>
-        <h2>AI tools designed to help people understand and improve their health.</h2>
+        <p class="eyebrow">Two focused products</p>
+        <h2>Understand what matters. Then act on it.</h2>
+        <p>
+          Health Compass and Health Coach are designed to work together:
+          one helps create clarity, the other helps create consistency.
+        </p>
       </div>
-      <div class="product-grid two-products">
-        <article id="health-compass" class="product-card product-large reveal compass-card">
-          <span class="icon">🧭</span>
-          <p class="mini-label">Health Compass</p>
-          <h3>AI-Powered Health Intelligence Platform</h3>
-          <p>Health Compass analyzes symptoms, lifestyle habits, nutrition, supplements, medications, fitness data, lab results, and personal goals to generate personalized wellness insights and evidence-based recommendations.</p>
-          <ul class="feature-list">
+
+      <div class="product-grid">
+        <article class="product-card reveal" id="health-compass">
+          <div class="product-icon">🧭</div>
+          <p class="product-label">Product 01</p>
+          <h3>Health Compass</h3>
+          <h4>AI-Powered Health Intelligence Platform</h4>
+          <p>
+            Health Compass analyzes symptoms, lifestyle habits, nutrition, supplements,
+            medications, fitness data, lab results, and health goals to provide
+            personalized wellness insights and evidence-based recommendations.
+          </p>
+
+          <ul>
             <li>Symptom and health concern analysis</li>
-            <li>Nutrition, supplement, and lifestyle guidance</li>
-            <li>Lab result and medication context</li>
-            <li>Progress tracking and educational insights</li>
+            <li>Nutrition and supplement guidance</li>
+            <li>Fitness and lifestyle recommendations</li>
+            <li>Lab result and health data interpretation</li>
+            <li>Progress tracking and health education</li>
           </ul>
-          <span class="status-pill">In development</span>
         </article>
 
-        <article id="health-coach" class="product-card product-large reveal delay-1 coach-card">
-          <span class="icon">💪</span>
-          <p class="mini-label green-label">Health Coach</p>
-          <h3>Personal AI Wellness & Accountability Coach</h3>
-          <p>Health Coach turns recommendations into daily action with personalized coaching, habit tracking, workout guidance, hydration reminders, supplement scheduling, motivation, and progress monitoring.</p>
-          <ul class="feature-list">
-            <li>Habit tracking and accountability</li>
+        <article class="product-card reveal" id="health-coach">
+          <div class="product-icon">💪</div>
+          <p class="product-label">Product 02</p>
+          <h3>Health Coach</h3>
+          <h4>Your Personal AI Wellness Coach</h4>
+          <p>
+            Health Coach turns recommendations into action through personalized coaching,
+            habit tracking, workout guidance, nutrition support, hydration reminders,
+            supplement scheduling, motivation, and accountability.
+          </p>
+
+          <ul>
+            <li>Daily habit and goal tracking</li>
             <li>Workout and nutrition coaching</li>
             <li>Hydration and supplement reminders</li>
-            <li>Goal tracking, streaks, and motivation</li>
+            <li>Progress monitoring and motivation</li>
+            <li>Accountability support to stay consistent</li>
           </ul>
-          <span class="status-pill green-pill">Concept & design</span>
         </article>
       </div>
     </section>
 
-    <section id="system" class="section-pad spotlight">
-      <div class="spotlight-panel reveal">
-        <div>
-          <p class="eyebrow">How they work together</p>
-          <h2>From insight to action.</h2>
-          <p>Health Compass helps users understand their health picture. Health Coach helps users execute the plan, stay accountable, and build momentum every day.</p>
-          <p class="disclaimer">Educational wellness guidance only. Not a replacement for professional medical care.</p>
-          <a class="btn primary" href="#contact">Join the early list</a>
-        </div>
-        <div class="mock-phone pathway-card">
-          <div class="phone-bar"></div>
-          <h3>Personal Health Flow</h3>
-          <div class="task"><span></span> Analyze symptoms, labs, habits, goals</div>
-          <div class="task"><span></span> Generate personalized insights</div>
-          <div class="task"><span></span> Create daily action plan</div>
-          <div class="task"><span></span> Coach, track, adjust, repeat</div>
-        </div>
+    <section class="section workflow" id="workflow">
+      <div class="section-heading reveal">
+        <p class="eyebrow">How it works</p>
+        <h2>From health data to daily action.</h2>
+        <p>
+          Vampyr Labs is building a future where intelligent health tools help people understand
+          their bodies, make better decisions, and follow through with confidence.
+        </p>
       </div>
-    </section>
 
-    <section id="mission" class="section-pad mission">
-      <div class="mission-copy reveal">
-        <p class="eyebrow">Why Vampyr Labs exists</p>
-        <h2>Healthcare reacts. We help people act sooner.</h2>
-        <p>Vampyr Labs is building a future where intelligent health tools help people understand their bodies, make better decisions, and follow through with confidence.</p>
-      </div>
-      <div class="steps reveal delay-1">
+      <div class="steps reveal">
         <div class="step">
           <strong>01</strong>
           <div>
@@ -127,6 +160,7 @@
             <p>Turn health data into clarity</p>
           </div>
         </div>
+
         <div class="step">
           <strong>02</strong>
           <div>
@@ -134,6 +168,7 @@
             <p>Build consistent daily actions</p>
           </div>
         </div>
+
         <div class="step">
           <strong>03</strong>
           <div>
@@ -144,19 +179,40 @@
       </div>
     </section>
 
-    <section id="contact" class="section-pad contact">
+    <section class="section mission" id="mission">
+      <div class="mission-card reveal">
+        <p class="eyebrow">Mission</p>
+        <h2>Healthcare reacts. We help people act sooner.</h2>
+        <p>
+          Vampyr Labs is building AI-powered health products that help people better understand
+          their health, build lasting habits, and take meaningful action before small issues
+          become bigger problems.
+        </p>
+        <p class="disclaimer">
+          Vampyr Labs products are designed for wellness education and personal health guidance.
+          They are not a replacement for professional medical advice, diagnosis, or treatment.
+        </p>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
       <div class="contact-card reveal">
         <p class="eyebrow">Early access</p>
-        <h2>Help shape the future of AI-powered health.</h2>
-        <p>Reach out to follow the build, join the early access list, or share feedback on Health Compass and Health Coach.</p>
-        <a class="btn primary" href="mailto:hello@vampyrlabs.com?subject=Vampyr%20Labs%20Inquiry">hello@vampyrlabs.com</a>
+        <h2>Want to follow what we're building?</h2>
+        <p>
+          Join the Vampyr Labs journey as Health Compass and Health Coach take shape.
+        </p>
+
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:hello@vampyrlabs.com?subject=Vampyr%20Labs%20Early%20Access">hello@vampyrlabs.com</a>
+          <a class="btn ghost" href="#top">Back to top</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <span>© 2026 Vampyr Labs</span>
-    <span>AI health intelligence and wellness coaching.</span>
+  <footer class="site-footer">
+    <p>© 2026 Vampyr Labs. AI-powered health intelligence and coaching.</p>
   </footer>
 
   <script src="script.js"></script>
