@@ -30,3 +30,63 @@
     grid-template-columns:1fr;
   }
 }
+
+
+/* FIX: scan image and cards layout */
+.scan-stack{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.scan-cards.under-image{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+  margin-top:0;
+}
+
+.scan-cards.under-image .scan-card{
+  position:relative;
+  inset:auto;
+  width:auto;
+  margin:0;
+  padding:18px 20px;
+  border-radius:20px;
+  animation:none;
+}
+
+.scan-cards.under-image .scan-card strong{
+  font-size:16px;
+  line-height:1.2;
+}
+
+.scan-cards.under-image .scan-card span{
+  font-size:14px;
+  line-height:1.35;
+}
+
+/* FIX: keep image clean now that cards are underneath */
+.scan-visual .scan-card{
+  display:none;
+}
+
+/* FIX: support index class names if older HTML remains */
+.brand{display:flex;gap:12px;align-items:center;font-weight:800}
+.brand-mark{width:34px;height:34px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.18);border-radius:11px;background:linear-gradient(135deg,var(--red),var(--purple));box-shadow:var(--glow)}
+.site-footer{position:relative;z-index:1;display:flex;justify-content:space-between;gap:20px;padding:30px clamp(18px,6vw,92px);border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+
+@media(max-width:1000px){
+  .scan-cards.under-image{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:640px){
+  .scan-stack{
+    gap:14px;
+  }
+  .scan-cards.under-image .scan-card{
+    width:100%;
+  }
+}
